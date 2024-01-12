@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="media" >
+        <div>
+            <div class="smalltext font-italic ">Image</div>
+            <img class="" src="{{image_file}}">
+        </div>
+        <div class="flex">
+            <div class="media-body">
+                <div class="smalltext font-italic">prediction</div>
+                <div class="text text-justify-center">{{prediction}}</div>        
+            </div>
+            <a href="{{url_for('recognize')}}" class='btn button'>Recognition Page</a>
+        </div>
+    </div>
+
+{% endblock content %}
